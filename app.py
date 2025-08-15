@@ -280,7 +280,7 @@ def plot_doppelturm_einzeln(tuermeliste, titel="Seitenansicht Doppeltürme", tur
             if not turm['kassetten']:
                 continue
 
-            fig, ax = plt.subplots(figsize=(8, 12))   # Turm breit, Bild hoch
+            fig, ax = plt.subplots(figsize=(7, 12))   # Turm breit, Bild hoch
             ax.set_title(f"Doppelturm {i+1} – Turm {tnum+1}", fontsize=18, pad=15)
             ax.set_xlabel("")
             ax.set_ylabel("Höhe [mm]", fontsize=11)
@@ -328,7 +328,7 @@ def plot_doppelturm_einzeln_gemischt(tuermeliste, titel="Seitenansicht Doppeltü
             if not turm['kassetten']:
                 continue
 
-            fig, ax = plt.subplots(figsize=(8, 12))
+            fig, ax = plt.subplots(figsize=(7, 12))
             ax.set_title(f"Doppelturm {i+1} – Turm {tnum+1}", fontsize=18, pad=15)
             ax.set_xlabel("")
             ax.set_ylabel("Höhe [mm]", fontsize=11)
@@ -493,3 +493,4 @@ if uploaded_file:
     except Exception as e:
 
         st.error(f"Fehler beim Einlesen oder Berechnen: {e}")
+
