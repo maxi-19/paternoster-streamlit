@@ -10,7 +10,7 @@ from io import BytesIO
 
 # Parameter
 kassetten_hoehen = [105, 145, 215, 255, 355, 455, 800]  # mm
-max_kassette_gewicht = 1200  # kg
+max_kassette_gewicht = 3000  # kg
 spielraum = 15  # mm
 start_hoehe = 400  # mm
 max_turmhoehe = 7500  # mm
@@ -491,4 +491,5 @@ if uploaded_file:
 
         st.success("Optimierung abgeschlossen. Siehe Ergebnisse oben!")
     except Exception as e:
+
         st.error(f"Fehler beim Einlesen oder Berechnen: {e}")
